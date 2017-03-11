@@ -1,0 +1,15 @@
+{
+  "name": "cps-content-web-e2e-tests",
+  "version": "1.0.0",
+  "description": "newsuk web e2e tests",
+  "author": "newsuk",
+  "scripts": {
+    "functional": "nightwatch --config ./config/${CONFIG:-local}.js",
+    "postinstall": "node ./get-selenium.js"
+  },
+   "devDependencies": {
+        "csv-parse": "^1.2.0",
+        "nightwatch": "^0.9.12",
+        "selenium-download": "^2.0.9"
+   }
+}
